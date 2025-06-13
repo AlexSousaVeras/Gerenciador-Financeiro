@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador Financeiro</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Gerenciador Financeiro</h1>
+    <div class="input-group">
+      <label for="salario">Salário Mensal:</label>
+      <input type="number" id="salario" placeholder="Digite seu salário" />
+      <button id="ConfirmarSalario" onclick="definirSalario()">Confirmar</button>
+    </div>
+
+    <div class="input-group">
+      <h2>Adicionar Conta</h2>
+      <input type="text" id="nomeConta" placeholder="Nome da conta" />
+      <input type="number" id="valorConta" placeholder="Valor da conta" />
+      <button id="adicionarConta" onclick="adicionarConta()">Adicionar</button>
+    </div>
+
+    <div class="contas-lista">
+      <h2>Contas do Mês</h2>
+      <ul id="listaContas"></ul>
+    </div>
+
+    <div class="resultado">
+      <h2>Resultado</h2>
+      <div id="distribuicao"></div>
+      <div id="totalDivida"></div>
+      <div id="resumoFinal"></div>
+      <div id="sugestaoRenda"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; <span id="ano"></span> Gerenciamento Financeiro. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+    
+</body>
+</html>
